@@ -1,4 +1,4 @@
-// import NavBar from './components/nav-bar'
+import NavBar from './components/nav-bar'
 import './globals.css'
 
 export const metadata = {
@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <html>
       <body>
-        {/* <NavBar /> */}
+        <NavBar />
         {children}
       </body>
     </html>
