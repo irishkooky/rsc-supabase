@@ -1,0 +1,22 @@
+'use client'
+
+import { useEffect, useState } from 'react'
+
+export default function TimerCounter() {
+  const [count, setCount] = useState(0)
+  useEffect(() => {
+    const timer = setInterval(() => setCount((prevCount) => prevCount + 1), 500)
+    return () => clearInterval(timer)
+  }, [])
+  return (
+    <>
+      <p>{count}</p>
+      <button
+        className="font-sm my-3 rounded bg-indigo-600 px-3 py-1 text-white hover:bg-indigo-700"
+        onClick={() => setCount(0)}
+      >
+        reset
+      </button>
+    </>
+  )
+}
