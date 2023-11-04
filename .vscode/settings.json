@@ -1,3 +1,11 @@
 {
-  "cSpell.words": ["nextjs", "apikey", "tailwindcss", "uturn", "heroicons"]
+  "cSpell.words": [
+    "nextjs",
+    "apikey",
+    "tailwindcss",
+    "uturn",
+    "heroicons",
+    "supabase",
+    "zustand"
+  ]
 }
