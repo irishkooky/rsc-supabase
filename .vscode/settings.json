@@ -6,6 +6,7 @@
     "uturn",
     "heroicons",
     "supabase",
+    "todos",
     "zustand"
   ]
 }
