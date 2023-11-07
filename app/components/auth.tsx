@@ -24,7 +24,7 @@ export default function Auth() {
       if (error) {
         alert(error.message)
       } else {
-        router.push('/')
+        router.push('/auth/todo-crud')
       }
     } else {
       const { error } = await supabase.auth.signUp({
@@ -53,11 +53,23 @@ export default function Auth() {
           <input
             type="text"
             required
-            className="my-2 rounded border bg-green-300 px-3 py-2 text-sm placeholder-gray-500 focus:outline-none"
+            className="my-2 rounded border border-gray-300 px-3 py-2 text-sm placeholder-gray-500 focus:outline-none"
             placeholder="Email"
             value={email}
             onChange={(e) => {
               setEmail(e.target.value)
+            }}
+          />
+        </div>
+        <div>
+          <input
+            type="text"
+            required
+            className="my-2 rounded border border-gray-300 px-3 py-2 text-sm placeholder-gray-500 focus:outline-none"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => {
+              setPassword(e.target.value)
             }}
           />
         </div>
